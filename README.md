@@ -23,7 +23,7 @@ head -n # show first lines of file ex: tail -n 10 file.log
 tail -n # show last lines of file  
 ```
 
-## ⚙️  Sistema e Processos
+## ⚙️  System and Processes
 
 ```sh
 ps aux # list running processes ex: ps aux | grep "nginx"  
