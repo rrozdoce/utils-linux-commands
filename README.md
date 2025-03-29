@@ -1,7 +1,7 @@
 # One of the best linux commands i know
 
 ## 📂 Gerenciamento de Arquivos e Diretórios
-```bash
+```sh
 man # ver oque o comando faz ex: man ls
 touch # criar um arquivo ex: touch arquivo.txt
 mkdir -p # cria diretório ex: mkdir -p pasta/subpasta
@@ -15,7 +15,7 @@ find  # busca arquivos/diretórios ex: find /caminho -name "*.txt"
 
 ## 🔍 Busca e Visualização
 
-```bash
+```sh
 grep # Procura por padrões em arquivos ex: grep "texto" arquivo.txt
 cat  # Exbibe o conteudo do arquivo ex: cat arquivo.txt
 less # Visualiza arquivos paginados( melhor que `cat` para arquivos grandes) ex: less arquivo.log
@@ -25,7 +25,7 @@ tail -n # Mostra as ultimas linhas do arquivo
 
 ## ⚙️ Sistema e Processos
 
-```bash
+```sh
 ps aux # Lista processos em execução ex: ps aux | grep "nginx"
 kill   # Encerra um processo ex: kill -9 PID
 top    # Monitora processos e uso de recursos ex: htop
@@ -36,7 +36,7 @@ du -sh # Exibe tamanho de um diretório ex: du -sh /pasta/
 
 ## 🌐 Rede e Internet
 
-```bash
+```sh
 ping # Testa conectividade com um host ex: ping google.com
 curl # Baixa arquivos da internet ex: curl -O URL
 wget
@@ -46,7 +46,7 @@ ip a # Mostra informações de rede(substitui ifconfig) ex: ip a
 
 ## 🛠️ Utilitários Úteis
 
-```bash
+```sh
 chmod # Altera permissões de arquivos ex: chmod +x script.sh 
 chown # Altera o dono de um arquivo ex: chown user:group arquivo
 tar   # Compacto/descompacta arquivos ex: tar -xzvf arquivo.tar.gz
