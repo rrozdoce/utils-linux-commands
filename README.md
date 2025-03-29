@@ -104,7 +104,7 @@ Set-ExecutionPolicy  # Permite execuções de scripts no Powershell( útil para 
 - `Win + X` → Menu de contexto avançado (acesso rápido a ferramentas).
 - `Win + V` → Histórico da Área de Transferência.
 - `Win + Ctrl + D` → Cria uma nova área de trabalho virtual.
-- `Win + . ou Win` + ; → Abre o menu de emojis e símbolos.
+- `Win + .` ou `Win + ;` → Abre o menu de emojis e símbolos.
 - `Win + Shift + S` → Ferramenta de captura de tela.
 - `Win + Ctrl + Shift + B` → Reinicia o driver de vídeo (útil se a tela travar).
 
