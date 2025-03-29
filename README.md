@@ -150,10 +150,10 @@ winget cache clean # Remove arquivos temporários baixados durante instalações
 ```
 
 ## Vantages de usar Winget
-✅ Instalação sem intervenção manual (ótimo para scripts e automação).
-✅ Atualiza apps em lote (evita versões desatualizadas).
-✅ Integração com repositório oficial da Microsoft (mas também suporta fontes externas).
-✅ Mais seguro (evita baixar apps de sites não confiáveis).
+- ✅ Instalação sem intervenção manual (ótimo para scripts e automação).
+- ✅ Atualiza apps em lote (evita versões desatualizadas).
+- ✅ Integração com repositório oficial da Microsoft (mas também suporta fontes externas).
+- ✅ Mais seguro (evita baixar apps de sites não confiáveis).
 
 ## Problemas Comuns e Soluções
 ❌ "Winget não é reconhecido" → Atualize o Windows ou instale o App Installer na Microsoft Store.
