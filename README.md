@@ -1,166 +1,166 @@
 # One of the best linux commands i know
 
-## 📂 Gerenciamento de Arquivos e Diretórios
+## 📂 File and Directory Management
 ```sh
-man # ver oque o comando faz ex: man ls
-touch # criar um arquivo ex: touch arquivo.txt
-mkdir -p # cria diretório ex: mkdir -p pasta/subpasta
-rm -f # exclui o arquivo/diretório pra sempre ex: rm -f arquivo.txt
-trash # ao instalar o pacote "trash" voce pode mandar o arquivo/diretório para a lixeira ex: trash arquivo.txt
-cp -r # copiar um arquivo para um diretório ex: cp -r origem/ destino/
-mv    # move ou renomeia arquivos/diretórios ex: mv antigo.txt novo.txt
-ls -l # Lista arquivos em formato detalhado
-find  # busca arquivos/diretórios ex: find /caminho -name "*.txt"
+man # view command manual ex: man ls  
+touch # create a file ex: touch file.txt  
+mkdir -p # create directory ex: mkdir -p folder/subfolder  
+rm -f # permanently delete file/directory ex: rm -f file.txt  
+trash # requires "trash" package – moves file/directory to trash ex: trash file.txt  
+cp -r # copy file to directory ex: cp -r source/ destination/  
+mv    # move or rename files/directories ex: mv old.txt new.txt  
+ls -l # list files in detailed format  
+find  # search for files/directories ex: find /path -name "*.txt"  
 ```
 
-## 🔍 Busca e Visualização
+## 🔍 Search and View
 
 ```sh
-grep # Procura por padrões em arquivos ex: grep "texto" arquivo.txt
-cat  # Exbibe o conteudo do arquivo ex: cat arquivo.txt
-less # Visualiza arquivos paginados( melhor que `cat` para arquivos grandes) ex: less arquivo.log
-head -n # Mostra as primeiras linhas do arquivo ex: tail -n 10 arquivo.log
-tail -n # Mostra as ultimas linhas do arquivo
+grep # search for patterns in files ex: grep "text" file.txt  
+cat  # display file content ex: cat file.txt  
+less # view files with pagination (better than `cat` for large files) ex: less file.log  
+head -n # show first lines of file ex: tail -n 10 file.log  
+tail -n # show last lines of file  
 ```
 
-## ⚙️ Sistema e Processos
+## ⚙️  Sistema e Processos
 
 ```sh
-ps aux # Lista processos em execução ex: ps aux | grep "nginx"
-kill   # Encerra um processo ex: kill -9 PID
-top    # Monitora processos e uso de recursos ex: htop
-htop   # ''''''''
-df -h # Mostra espaço em disco ex: df -h
-du -sh # Exibe tamanho de um diretório ex: du -sh /pasta/
+ps aux # list running processes ex: ps aux | grep "nginx"  
+kill   # terminate a process ex: kill -9 PID  
+top    # monitor processes and resource usage ex: htop  
+htop   # ''''''''  
+df -h # show disk space ex: df -h  
+du -sh # display directory size ex: du -sh /folder/  
 ```
 
-## 🌐 Rede e Internet
+## 🌐 Network and Internet
 
 ```sh
-ping # Testa conectividade com um host ex: ping google.com
-curl # Baixa arquivos da internet ex: curl -O URL
-wget
-ssh  # conecta a um servidor remoto ex: ssh user@host
-ip a # Mostra informações de rede(substitui ifconfig) ex: ip a
+ping # test connectivity to a host ex: ping google.com  
+curl # download files from the internet ex: curl -O URL  
+wget  
+ssh  # connect to a remote server ex: ssh user@host  
+ip a # show network info (replaces ifconfig) ex: ip a  
 ```
 
-## 🛠️ Utilitários Úteis
-
+## 🛠️ Useful Utilities
 ```sh
-chmod # Altera permissões de arquivos ex: chmod +x script.sh 
-chown # Altera o dono de um arquivo ex: chown user:group arquivo
-tar   # Compacto/descompacta arquivos ex: tar -xzvf arquivo.tar.gz
-alias # Cria atalhos para comandos ex: alias ll='ls -la'
+chmod # change file permissions ex: chmod +x script.sh  
+chown # change file owner ex: chown user:group file  
+tar   # compress/extract files ex: tar -xzvf file.tar.gz  
+alias # create command shortcuts ex: alias ll='ls -la'  
 ```
 
-## 📌 Dicas Extras
-- Use `Ctrl + C` para interromper um comando
-- Use `Ctrl + R` para buscar no histórico de comandos
-- Sempre confira o manual com `man comando` antes de usar flags desconhecidas
+## 📌 Extra Tips
+- Use `Ctrl + C` to interrupt a command
+- Use `Ctrl + R` to search command history
+-  Always check the manual with `man comando` before using unfamiliar flags
 
-## 🔗 Referências Úteis
-- [ExplainShell](https://explainshell.com/) - Explica o que cada parte do comando faz.]
-- [TLDR Pages](https://tldr.sh/) - Versão simplificada do `man`
+## 🔗 Useful References
+- [ExplainShell](https://explainshell.com/) - Explains each part of a command
+- [TLDR Pages](https://tldr.sh/) - Simplified version of `man`
 
 ## Extras: Windows 11 commands
 
-### Comandos Úteis no Prompt de Comando (CMD)
+### Useful Command Prompt (CMD) Commands
 
 ```sh
-ipconfig # Mostra informações de rede(IP,gateway, DNS, etc.)
-ipconfig /release # renovar o ip
-ipconfig /renew   # ''''''
-ipconfig /flushdns # Limpar o cache DNS
-ping # Testa conexão com servidor ou site
-tracert # Rastreia a rota que os pacotes fazem até o destino
-netstat # Mostra conexões de rede ativas
-netstat -ano # Lista todas as conexões com PIDs
-tasklist # lista processos em execução
-taskkill /im nome_do_processo.exe /if # força o fechamento de um programa
-chkdsk # verifica e repara erros no disco ex: chdsk C: /f
-sfc /scannow # verifica e repara arquivos corrompidos do sistema
-diskpart # ferramenta avançada para gerenciamento de discos(particionamente, formatação)
-shutdown /s /t 0 # Desliga o PC imediatamente
-shutdown /r /t 0 # Reinicia o PC
-shutdown /h      # HIbernação
+ipconfig # Show network info (IP, gateway, DNS, etc.)  
+ipconfig /release # release IP  
+ipconfig /renew   # renew IP  
+ipconfig /flushdns # Clear DNS cache  
+ping # Test connection to server or website  
+tracert # Trace route packets take to destination  
+netstat # Show active network connections  
+netstat -ano # List all connections with PIDs  
+tasklist # list running processes  
+taskkill /im process_name.exe /if # force close a program  
+chkdsk # check and repair disk errors ex: chdsk C: /f  
+sfc /scannow # scan and repair corrupted system files  
+diskpart # advanced disk management tool (partitioning, formatting)  
+shutdown /s /t 0 # Shut down PC immediately  
+shutdown /r /t 0 # Restart PC  
+shutdown /h      # Hibernate  
 ```
 
-### Comandos do Powershell (Mais forte que o CMD)
+### PowerShell Commands (More powerful than CMD)
 ```sh
-Get-Process # Lista processos em execução
-Stop-Process -Name "nome_do_processo" -Force # encerra o processo
-Get-NetAdapter # Mostra informações sobre adaptadores de rede
-Test-NetConnection # Testa conectividade com um host (similar ao `ping`)
-Get-WindowsUpdateLog # Gera um log de atualizações do Windows
-Get-Disk             # Mostra informações sobre o disco
-Get-Partition        # Mostra informações sobre partições
-Set-ExecutionPolicy  # Permite execuções de scripts no Powershell( útil para automação )
+Get-Process # List running processes  
+Stop-Process -Name "process_name" -Force # terminate process  
+Get-NetAdapter # Show network adapter info  
+Test-NetConnection # Test connectivity to host (similar to `ping`)  
+Get-WindowsUpdateLog # Generate Windows update log  
+Get-Disk             # Show disk info  
+Get-Partition        # Show partition info  
+Set-ExecutionPolicy  # Allow script execution in PowerShell (useful for automation)  
 ```
 
-### Atalhos do Teclado no Windows 11
-- `Win + A` → Abre o Centro de Ações.
-- `Win + E` → Abre o Explorador de Arquivos.
-- `Win + I` → Abre as Configurações do Windows.
-- `Win + X` → Menu de contexto avançado (acesso rápido a ferramentas).
-- `Win + V` → Histórico da Área de Transferência.
-- `Win + Ctrl + D` → Cria uma nova área de trabalho virtual.
-- `Win + .` ou `Win + ;` → Abre o menu de emojis e símbolos.
-- `Win + Shift + S` → Ferramenta de captura de tela.
-- `Win + Ctrl + Shift + B` → Reinicia o driver de vídeo (útil se a tela travar).
+### Windows 11 Keyboard Shortcuts
+- `Win + A` → Open Action Center.
+- `Win + E` → Open File Explorer.
+- `Win + I` → Open Windows Settings.
+- `Win + X` → Advanced context menu (quick access to tools).
+- `Win + V` → Clipboard History.
+- `Win + Ctrl + D` →  Create new virtual desktop.
+- `Win + .` ou `Win + ;` → Open emoji/symbol menu.
+- `Win + Shift + S` → Screenshot tool.
+- `Win + Ctrl + Shift + B` → Restart video driver (useful if screen freezes).
 
 ### Ferramentas avançadas Windows 11
-- `msconfig` → Configuração do Sistema (inicialização, serviços).
-- `devmgmt.msc` → Gerenciador de Dispositivos.
-- `diskmgmt.msc` → Gerenciamento de Discos.
-- `services.msc` → Serviços do Windows.
-- `eventvwr.msc` → Visualizador de Eventos (logs do sistema).
-- `gpedit.msc` → Editor de Política de Grupo (disponível apenas em versões Pro/Enterprise).
-- `taskmgr` → Gerenciador de Tarefas.
-- `control` → Painel de Controle tradicional.
+- `msconfig` → System Configuration (startup, services).
+- `devmgmt.msc` → Device Manager.
+- `diskmgmt.msc` → Disk Management.
+- `services.msc` → Windows Services.
+- `eventvwr.msc` → Event Viewer (system logs).
+- `gpedit.msc` → Group Policy Editor (Pro/Enterprise only).
+- `taskmgr` → Task Manager.
+- `control` → Traditional Control Panel.
 
-# Gerenciador de pacotes Windows(Winget)
-O winget é o gerenciador de pacotes oficial do Windows, introduzido pela Microsoft para facilitar a instalação, atualização e remoção de aplicativos via linha de comando (CMD ou PowerShell). Ele é integrado ao Windows 11 (e também disponível no Windows 10 a partir da versão 1809 com atualizações).
+# Windows Package Manager (Winget)
+Winget is the official Windows package manager, introduced by Microsoft to simplify installing, updating, and removing apps via command line (CMD or PowerShell). It comes built into Windows 11 (and is also available for Windows 10 starting with version 1809 with updates).
+
 ```sh
-winget search <pacote> # ex: chrome
-winget install <nome_pacote/app> # ex: Google.Chrome/Mozilla.Firefox/Microsoft.VisualStudioCode
-winget install --d=<nome_pacote> # id é para especificar o aplicativo exato
-# ex:
-winget install --id=Notepad++.Notepad++ --version 8.6.2
+winget search <package> # ex: chrome  
+winget install <package_name/app> # ex: Google.Chrome/Mozilla.Firefox/Microsoft.VisualStudioCode  
+winget install --d=<package_name> # id specifies exact app  
+# ex:  
+winget install --id=Notepad++.Notepad++ --version 8.6.2  
 
-winget list --name <nome_pacote> # ex: chrome
-winget upgrade                   # Lista aplicativos com atualizações disponíveis
-winget upgrade --id <nome_pacote> # Atualiza app especifico
-winget upgrade --all              # Atualiza todos
-winget uninstall <nome_do_app>    # Remove um programa instalado
-# ex:
-winget uninstall Google.Chrome
-winget uninstall --id=Adobe.Acrobat.Reader.64-bit
+winget list --name <package_name> # ex: chrome  
+winget upgrade                   # List apps with available updates  
+winget upgrade --id <package_name> # Update specific app  
+winget upgrade --all              # Update all apps  
+winget uninstall <app_name>    # Uninstall a program  
+# ex:  
+winget uninstall Google.Chrome  
+winget uninstall --id=Adobe.Acrobat.Reader.64-bit  
 
-# Exportar e Importar Lista de Aplicativos
-winget export -o apps.json 
-winget import -i apps.json
+# Export and Import App Lists  
+winget export -o apps.json  
+winget import -i apps.json  
 
-# Mostrar Informações de um App
-winget show <nome_do_app>
-# ex:
-winget show Microsoft.PowerToys
+# Show App Info  
+winget show <app_name>  
+# ex:  
+winget show Microsoft.PowerToys  
 
-# Limpar Cache do Winget
-winget cache clean # Remove arquivos temporários baixados durante instalações.
+# Clear Winget Cache  
+winget cache clean # Remove temporary files from installations.  
 ```
 
-## Vantages de usar Winget
-- ✅ Instalação sem intervenção manual (ótimo para scripts e automação).
-- ✅ Atualiza apps em lote (evita versões desatualizadas).
-- ✅ Integração com repositório oficial da Microsoft (mas também suporta fontes externas).
-- ✅ Mais seguro (evita baixar apps de sites não confiáveis).
+## Advantages of Using Winget
+- ✅ Silent installation (great for scripts and automation).
+- ✅ Batch updates (avoids outdated versions).
+- ✅ Integration with Microsoft's official repository (also supports external sources).
+- ✅ More secure (avoids downloading from untrusted sites).
 
-## Problemas Comuns e Soluções
-- ❌ "Winget não é reconhecido" → Atualize o Windows ou instale o App Installer na Microsoft Store.
-- ❌ Falha na instalação → Execute o terminal como Administrador ou use --force.
-- ❌ App não encontrado → Verifique o nome exato com winget search.
+## Common Issues and Solutions
+- ❌ "Winget not recognized" → Update Windows or install App Installer from Microsoft Store.
+- ❌ Installation failure → Run terminal as Admin or use --force.
+- ❌ App not found → Verify exact name with winget search.
 
-### Exemplo Prático (Instalar Ferramentas Úteis de Uma Vez)
+### Practical Example (Install Useful Tools at Once)
 
 ```sh
 winget install Microsoft.PowerToys
