@@ -156,9 +156,9 @@ winget cache clean # Remove arquivos temporários baixados durante instalações
 - ✅ Mais seguro (evita baixar apps de sites não confiáveis).
 
 ## Problemas Comuns e Soluções
-❌ "Winget não é reconhecido" → Atualize o Windows ou instale o App Installer na Microsoft Store.
-❌ Falha na instalação → Execute o terminal como Administrador ou use --force.
-❌ App não encontrado → Verifique o nome exato com winget search.
+- ❌ "Winget não é reconhecido" → Atualize o Windows ou instale o App Installer na Microsoft Store.
+- ❌ Falha na instalação → Execute o terminal como Administrador ou use --force.
+- ❌ App não encontrado → Verifique o nome exato com winget search.
 
 ### Exemplo Prático (Instalar Ferramentas Úteis de Uma Vez)
 
