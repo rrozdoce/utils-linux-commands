@@ -146,7 +146,7 @@ Set-ExecutionPolicy  # Allow script execution in PowerShell (useful for automati
 - `Win + Shift + S` → Screenshot tool.
 - `Win + Ctrl + Shift + B` → Restart video driver (useful if screen freezes).
 
-### Ferramentas avançadas Windows 11
+### Advanced tools for Windows 11
 
 - `msconfig` → System Configuration (startup, services).
 - `devmgmt.msc` → Device Manager.
